@@ -1,0 +1,56 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "labels": [
+    "dependencies"
+  ],
+  "packageRules": [
+    {
+      "matchPackagePatterns": [
+        "Aspire*"
+      ],
+      "addLabels": [
+        "Aspire"
+      ],
+      "groupName": "Aspire"
+    },
+    {
+      "matchPackagePatterns": [
+        "FluentValidation*"
+      ],
+      "addLabels": [
+        "FluentValidation"
+      ],
+      "groupName": "FluentValidation"
+    },
+    {
+      "matchPackagePatterns": [
+        "OpenTelemetry*"
+      ],
+      "addLabels": [
+        "OpenTelemetry"
+      ],
+      "groupName": "OpenTelemetry"
+    },
+    {
+      "matchPackagePatterns": [
+        "xunit*"
+      ],
+      "addLabels": [
+        "xunit"
+      ],
+      "groupName": "xunit"
+    },    
+    {
+      "matchDepTypes": [
+        "optionalDependencies"
+      ],
+      "addLabels": [
+        "optional"
+      ]
+    },
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
+    }
+  ]
+}
